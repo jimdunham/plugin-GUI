@@ -1,10 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
    LastUpgradeVersion = "0720"
-   version = "1.3">
+   version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <PreActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "#!/bin/bash&#10;cd $PROJECT_DIR/Plugins/Config&#10;if [[ ! -a Env.xcconfig ]]&#10;then&#10;touch Env.xcconfig&#10;fi"
+               shellToInvoke = "/bin/bash">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "62F40A2101C1715EE4F8C87B"
+                     BuildableName = "open-ephys.app"
+                     BlueprintName = "open-ephys (App)"
+                     ReferencedContainer = "container:open-ephys.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+      </PreActions>
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
@@ -14,9 +33,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "609761DEC9151D2CDD50270C"
+               BlueprintIdentifier = "62F40A2101C1715EE4F8C87B"
                BuildableName = "open-ephys.app"
-               BlueprintName = "open-ephys"
+               BlueprintName = "open-ephys (App)"
                ReferencedContainer = "container:open-ephys.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,6 +65,20 @@
                BuildableName = "BasicSpikeDisplay.bundle"
                BlueprintName = "BasicSpikeDisplay"
                ReferencedContainer = "container:Plugins/BasicSpikeDisplay/BasicSpikeDisplay.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E1D300271DAEBBBD0050E0F8"
+               BuildableName = "BinaryWriter.bundle"
+               BlueprintName = "BinaryWriter"
+               ReferencedContainer = "container:Plugins/BinaryWriter/BinaryWriter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -112,6 +145,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E14A22111DA80A9700134197"
+               BuildableName = "JuliaProcessor.bundle"
+               BlueprintName = "JuliaProcessor"
+               ReferencedContainer = "container:Plugins/JuliaProcessor/JuliaProcessor.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "E1F558CF1C9B23370035F88B"
                BuildableName = "KWIKFormat.bundle"
                BlueprintName = "KWIKFormat"
@@ -140,10 +187,38 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D3E60EE41CD19893003FDF5C"
+               BuildableName = "LfpDisplayNodeBeta.bundle"
+               BlueprintName = "LfpDisplayNodeBeta"
+               ReferencedContainer = "container:Plugins/LfpDisplayNodeBeta/LfpDisplayNodeBeta.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "E1F559191C9B29D20035F88B"
                BuildableName = "NetworkEvents.bundle"
                BlueprintName = "NetworkEvents"
                ReferencedContainer = "container:Plugins/NetworkEvents/NetworkEvents.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E1F91DE31DBE670500FF13EA"
+               BuildableName = "NWBFormat.bundle"
+               BlueprintName = "NWBFormat"
+               ReferencedContainer = "container:Plugins/NWBFormat/NWBFormat.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -224,10 +299,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E1F559E01C9B42270035F88B"
-               BuildableName = "SpikeSorter.bundle"
-               BlueprintName = "SpikeSorter"
-               ReferencedContainer = "container:Plugins/SpikeSorter/SpikeSorter.xcodeproj">
+               BlueprintIdentifier = "0363EF941CF9D6F90077C530"
+               BuildableName = "SpikeRaster.bundle"
+               BlueprintName = "SpikeRaster"
+               ReferencedContainer = "container:Plugins/SpikeRaster/SpikeRaster.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -238,10 +313,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D3E60EE41CD19893003FDF5C"
-               BuildableName = "LfpDisplayNodeBeta.bundle"
-               BlueprintName = "LfpDisplayNodeBeta"
-               ReferencedContainer = "container:Plugins/LfpDisplayNodeBeta/LfpDisplayNodeBeta.xcodeproj">
+               BlueprintIdentifier = "E1F559E01C9B42270035F88B"
+               BuildableName = "SpikeSorter.bundle"
+               BlueprintName = "SpikeSorter"
+               ReferencedContainer = "container:Plugins/SpikeSorter/SpikeSorter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -256,9 +331,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "609761DEC9151D2CDD50270C"
+            BlueprintIdentifier = "62F40A2101C1715EE4F8C87B"
             BuildableName = "open-ephys.app"
-            BlueprintName = "open-ephys"
+            BlueprintName = "open-ephys (App)"
             ReferencedContainer = "container:open-ephys.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -279,9 +354,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "609761DEC9151D2CDD50270C"
+            BlueprintIdentifier = "62F40A2101C1715EE4F8C87B"
             BuildableName = "open-ephys.app"
-            BlueprintName = "open-ephys"
+            BlueprintName = "open-ephys (App)"
             ReferencedContainer = "container:open-ephys.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -297,9 +372,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "609761DEC9151D2CDD50270C"
+            BlueprintIdentifier = "62F40A2101C1715EE4F8C87B"
             BuildableName = "open-ephys.app"
-            BlueprintName = "open-ephys"
+            BlueprintName = "open-ephys (App)"
             ReferencedContainer = "container:open-ephys.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

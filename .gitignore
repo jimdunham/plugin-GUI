@@ -83,9 +83,13 @@ Builds/VisualStudio2013/Plugins/*/*.user
 Builds/VisualStudio2013/Plugins/*/*.suo
 Builds/VisualStudio2013/Plugins/*/*.sdf
 Builds/VisualStudio2013/Plugins/*/*.opensdf
-Builds/VisualStudio2013/Plugins/*/x64
-Builds/VisualStudio2013/Plugins/*/Debug
-Builds/VisualStudio2013/Plugins/*/Release
+Builds/VisualStudio2013/Plugins/**/x64
+Builds/VisualStudio2013/Plugins/**/Debug
+Builds/VisualStudio2013/Plugins/**/Release
+
+Builds/VisualStudio2013/Plugins/Debug
+Builds/VisualStudio2013/Plugins/Release
+Builds/VisualStudio2013/Plugins/x64
 
 # 5. Miscellanous generated files (Doxygen, etc.)
 Source/Docs/*
@@ -114,6 +118,12 @@ Introjucer/Builds/MacOSX/The Introjucer.xcodeproj/*.pbxuser
 Introjucer/Builds/MacOSX/The Introjucer.xcodeproj/xcuserdata
 Introjucer/Builds/MacOSX/The Introjucer.xcodeproj/project.xcworkspace
 Introjucer/Builds/MacOSX/build
+Projucer/Builds/MacOSX/Projucer.xcodeproj/xcuserdata
+Projucer/Builds/MacOSX/Projucer.xcodeproj/project.xcworkspace
 
 # 9. Plugin build dirs
 build/
+
+/Builds/MacOSX/Plugins/Config/Env.xcconfig
+#10. git conflict resolution files
+*.orig
